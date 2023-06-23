@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+      <form action="" class="form">
+        <input type="text" placeholder="Search for any IP address or domain" />
+        <div class="image">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </div>
+      </form>
+    </header>
+    <main>
+      <section class="text">
+        <div>
+          <h2>IP ADDRESS</h2>
+          <p class="ip-address"></p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2>LOCATION</h2>
+          <p class="location"></p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2>TIMEZONE</h2>
+          <div class="utc">
+            <span></span>
+            <p class="time"></p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2>ISP</h2>
+          <p class="isp"></p>
+        </div>
+      </section>
+    </main>
+
+    <div id="map"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
